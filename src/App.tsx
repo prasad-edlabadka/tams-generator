@@ -69,9 +69,9 @@ function App() {
                     <span className="input-group-text">CPC</span>
                     <input type="text" className={`form-control ${errors.cpc ? 'is-invalid' : ''}`} {...register("cpc", { required: "CPC is mandatory", pattern: { value: /^[A-Z0-9]{3}$/, "message": "Invalid CPC Format" } })} placeholder="Enter CPC" aria-label="CPC" />
                     <span className="input-group-text">Campaign ID</span>
-                    <input type="text" className={`form-control ${errors.campaign ? 'is-invalid' : ''}`} {...register("campaign", { required: "Campaign ID is mandatory", pattern: { value: /^[0-9]{4}$/, "message": "Invalid Campaign ID Format" } })} placeholder="Enter Campaign ID" aria-label="Campaign ID" />
+                    <input type="text" className={`form-control ${errors.campaign ? 'is-invalid' : ''}`} {...register("campaign", { required: false, pattern: { value: /^[0-9]{4}$/, "message": "Invalid Campaign ID Format" } })} placeholder="Enter Campaign ID" aria-label="Campaign ID" />
                     <span className="input-group-text">Cell</span>
-                    <input type="text" className={`form-control ${errors.cell ? 'is-invalid' : ''}`} {...register("cell", { required: "Cell Number is mandatory", pattern: { value: /^[0-9]{1,2}$/, "message": "Invalid Cell Number Format" } })} placeholder="Enter Cell Number" aria-label="Cell" />
+                    <input type="text" className={`form-control ${errors.cell ? 'is-invalid' : ''}`} {...register("cell", { required: false, pattern: { value: /^[0-9]{1,2}$/, "message": "Invalid Cell Number Format" } })} placeholder="Enter Cell Number" aria-label="Cell" />
                     <div className="invalid-feedback">{[errors.cpc?.message, errors.campaign?.message, errors.cell?.message].filter(Boolean).join(", ")}</div>
                   </div>
 
