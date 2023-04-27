@@ -51,8 +51,12 @@ function App() {
   }
 
   const copyRequester = () => {
-    setValue("recipientName", getValues("requesterName"));
+    const name = getValues("requesterName");
+    const splitName = name.split(" ");
+    setValue("recipientName", name);
     setValue("recipientBrid", getValues("requesterBrid"));
+    setValue("firstName", splitName[0] || '');
+    setValue("lastName", splitName[1] || '');
   }
 
   return (
@@ -188,6 +192,11 @@ function App() {
 
                   <Button variant="primary" type="submit">
                     Generate Excel Sheet
+                  </Button>
+
+                  {/* review code */}
+                  <Button variant="primary" type="button" className="ms-2">
+                    Cancel
                   </Button>
                 </Form>
               </Card.Body>
