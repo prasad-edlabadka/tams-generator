@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tams-generator/static/css/main.e3104f6e.css",
-    "main.js": "/tams-generator/static/js/main.7b2edefc.js",
+    "main.js": "/tams-generator/static/js/main.66724125.js",
     "static/js/787.feff1a9e.chunk.js": "/tams-generator/static/js/787.feff1a9e.chunk.js",
     "index.html": "/tams-generator/index.html",
     "main.e3104f6e.css.map": "/tams-generator/static/css/main.e3104f6e.css.map",
-    "main.7b2edefc.js.map": "/tams-generator/static/js/main.7b2edefc.js.map",
+    "main.66724125.js.map": "/tams-generator/static/js/main.66724125.js.map",
     "787.feff1a9e.chunk.js.map": "/tams-generator/static/js/787.feff1a9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3104f6e.css",
-    "static/js/main.7b2edefc.js"
+    "static/js/main.66724125.js"
   ]
 }
